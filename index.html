@@ -1,13 +1,14 @@
 <html lang="es">
 
 <head>
-    <link rel="icon" href="giimg\favicon.ico" type="img/ico" sizes="16x16">
+    <link rel="icon" href="img\favicon.ico" type="img/ico" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <title>The Big Five Marathon</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
-    <script src="js\script.js"></script>
+    <script defer src="js\script.js"></script>
+
 </head>
 
 <body>
@@ -20,8 +21,38 @@
         <div class="two-column">
             <h1>Race Information</h1>
             <p>The Big Five Marathon features two distances: </p>
-            <p>Full marathon - 42.195km/26.2mi</p>
-            <p>Half marathon - 21.1km/13.1mi</p>
+            <p>Full marathon - 42km/26mi</p>
+            <p>Half marathon - 21km/13mi</p>
+        </div>
+        <div class="two-column">
+            <h1>Countdown</h1>
+            <table class="countdownContainer">
+                <tr class="info">
+                    <td colspan="4">Marathon</td>
+                </tr>
+                <tr class="info">
+                    <td id="days"></td>
+                    <td id="hours"></td>
+                    <td id="minutes"></td>
+                    <td id="seconds"></td>
+                </tr>
+                <tr>
+                    <td>Days</td>
+                    <td>Hours</td>
+                    <td>Minutes</td>
+                    <td>Seconds</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--Section-2-->
+    <div class="row">
+        <div class="two-column">
+            <h1>Rules & Regulations</h1>
+            <p>Change of Distance: If you decide to change distance during the race, the race result will read FNT (finished no time). All runners who change distances before race day will be registered accordingly and receive an official time.</p>
+            <p>Top Finishers: The top three male and female finishers of all distances are the first three to physically cross the finish line regardless of their net time.</p>
+            <p>Gear: Nordic walking and trekking poles are not allowed.</p>
+            <p>Please note that under certain circumstances, we may need to pick up our runners. If this were the case, the safety of our runners is our priority.</p>
         </div>
         <div class="two-column">
             <h1>Medical Information</h1>
@@ -32,103 +63,149 @@
                 to local medical facilities, the doctor/medical team and travel agency will not be held liable for any treatment carried out by staff from local medical facilities.</p>
         </div>
     </div>
-    <!--Section-2-->
-    <div class="row">
-        <div class="two-column">
-            <h1>Información autobus y del punto de partida </h1>
-        </div>
-        <div class="two-column">
-            <h1>puntos de abandonar </h1>
-        </div>
-    </div>
     <!--Section-3-->
     <div class="row">
         <div class="two-column">
-            <h1>Tablas</h1>
-            <table class="table table-bordered table-dark">
+            <h1>First Places</h1>
+            <table>
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th>Name</th>
+                        <th>Place</th>
+                        <th>Time</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>Paola</td>
+                        <td>1st</td>
+                        <td>4h:59m:35s</td>
                     </tr>
                     <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
+                        <td>Manolo</td>
+                        <td>2nd</td>
+                        <td>5h:1m:12s</td>
                     </tr>
                 </tbody>
+                <tr>
+                    <td>Peter</td>
+                    <td>3rd</td>
+                    <td>5h:1m:37s</td>
+                </tr>
+                <tr>
+                    <td>Paolo</td>
+                    <td>4th</td>
+                    <td>5h:1m:52s</td>
+                </tr>
+                <tr>
+                    <td>Pau</td>
+                    <td>5th</td>
+                    <td>5h:2m:17s</td>
+                </tr>
+                <tr>
+                    <td>Carrie</td>
+                    <td>6th</td>
+                    <td>5h:2m:41s</td>
+                </tr>
+                <tr>
+                    <td>Helena</td>
+                    <td>7th</td>
+                    <td>5h:3m:3s</td>
+                </tr>
+                <tr>
+                    <td>Carla</td>
+                    <td>8th</td>
+                    <td>5h:3m:24s</td>
+                </tr>
+                <tr>
+                    <td>Veronica</td>
+                    <td>9th</td>
+                    <td>5h:3m:46s</td>
+                </tr>
+                <tr>
+                    <td>Patrick</td>
+                    <td>10th</td>
+                    <td>5h:4m:39s</td>
+                </tr>
             </table>
+
         </div>
-        <div class="two-column">
-            <iframe src="https://discord.com/widget?id=762694782753439774&theme=dark" width="730" height="450" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> </div>
+        <div class="two-column" id="iframe">
+            <h1>Discord Server</h1>
+            <iframe src="https://discord.com/widget?id=788454514629541949&theme=dark" width="730" height="450" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
     </div>
     <!--Section-4-->
     <div class="row">
         <div class="two-column">
-            <h1>Mapa</h1>
+            <h1>Map with importants points</h1>
+            <img src="img\Mapa.png" alt="map">
         </div>
         <div class="two-column">
-            <h1>Mapas</h1>
+            <h1>Google Map</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8880.994802884694!2d28.62827988194373!3d-24.18587677055825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e826ba443fbdeef%3A0x6616ea443b5f94ea!2sRavineside%20Lodge!5e1!3m2!1ses!2ses!4v1608055109580!5m2!1ses!2ses"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </div>
     <!--Section-5-->
     <div class="row">
         <div class="one-column">
+            <h1>The last marathon</h1>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/cmRZbdG5H88" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
     <!--Section-6-->
     <div class="row">
         <div class="one-column">
-            <h1>Galeria</h1>
-            <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="img/1.jpg" style="width:100%">
+            <h1>Galery</h1>
+            <div class="carousel">
+                <div class="carousel__item carousel__item--visible">
+                    <img src="img/car1.jpg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="img/car2.jpg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="img/car4.jpg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="img/car5.jpg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="img/car6.jpg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="img/car7.jpg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="img/car8.jpg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="img/car9.jpg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="img/car10.jpg" />
                 </div>
 
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="img/2.jpg" style="width:100%">
+                <div class="carousel__actions">
+                    <button id="carousel__button--prev" aria-label="Previous slide"><</button>
+                    <button id="carousel__button--next" aria-label="Next slide">></button>
                 </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="img/3.jpg" style="width:100%">
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            </div>
-            <br>
-
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
     </div>
     <!--footer-->
-
+    <div class="row" id="footer">
+        <div class="two-column">
+            <p>The Big Five Marathon, 2021</p>
+        </div>
+        <div class="two-column">
+            <p><a href="https://www.facebook.com/bigfivemarathon/" target="blank">Facebook</a></p>
+            <p><a href="https://www.instagram.com/albatrosadventuremarathons" target="blank">Instagram</a></p>
+            <p><a href="https://www.youtube.com/user/AdventureMarathon" target="blank">Youtube</a></p>
+            <p><a href="https://www.linkedin.com/company/albatros-adventure-marathons/" target="blank">Linkedin</a></p>
+        </div>
+    </div>
 </body>
 
 </html>
