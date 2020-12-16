@@ -47,7 +47,7 @@ function moveToPrevSlide() {
 
 function countdown() {
     var now = new Date();
-    var eventDate = new Date(2021, 5, 20);
+    var eventDate = new Date(2021, 5, 19);
 
     var currentTiime = now.getTime();
     var eventTime = eventDate.getTime();
