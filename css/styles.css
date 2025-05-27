@@ -6,7 +6,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgba(233, 144, 43, 0.76);
+    background: linear-gradient(180deg, #e9d8a6 0%, #e2c275 50%, #c2b280 100%);
+    color: #5c4326;
 }
 
 .row:after {
@@ -17,7 +18,6 @@ body {
 
 
 /*Header*/
-
 .header {
     background-image: url('../img/header.jpg');
     background-size: cover;
@@ -25,7 +25,8 @@ body {
     padding: 15% 20px;
     text-align: center;
     font-size: 3vw;
-    color: aliceblue;
+    color: #f9f6f2;
+    text-shadow: 2px 2px 8px #a67c52;
 }
 
 .header img {
@@ -37,13 +38,10 @@ body {
 /*countdown*/
 
 .countdownContainer {
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    background: #ddd;
-    border: 1px solid #999;
-    padding: 10px;
-    box-shadow: 0 0 5px 3px #ccc;
+    background: #f3e9d2;
+    border: 1px solid #bfa76f;
+    color: #7c5c2e;
+    box-shadow: 0 0 5px 3px #e2c275;
 }
 
 .info {
@@ -106,21 +104,17 @@ table {
 th,
 tr,
 td {
-    border: 1px solid #000;
-    width: 150px;
-    height: 45px;
-    vertical-align: middle;
-    text-align: center;
-    background-color: #fff;
+    border: 1px solid #bfa76f;
+    background-color: #f9f6f2;
+    color: #5c4326;
 }
 
 th {
+    background-color: #c2b280;
     color: #fff;
-    background-color: #252525;
 }
-
 tr:nth-child(odd) td {
-    background-color: #eee;
+    background-color: #f3e9d2;
 }
 
 
@@ -137,6 +131,21 @@ tr:nth-child(odd) td {
     overflow: hidden;
     max-width: 600px;
     position: relative;
+}
+
+.countdownContainer {
+    background: #f3e9d2;
+    border: 1px solid #bfa76f;
+    color: #7c5c2e;
+    box-shadow: 0 0 5px 3px #e2c275;
+    font-size: 2rem;         /* Increased font size */
+    padding: 1.5rem 2rem;    /* More padding for emphasis */
+    text-align: center;
+}
+
+.countdownContainer td {
+    padding: 0.5rem 1.2rem;  /* Larger cells for numbers */
+    font-weight: bold;
 }
 
 .carousel .carousel__item,
@@ -164,13 +173,15 @@ tr:nth-child(odd) td {
     transform: translateY(-50%);
 }
 
-.carousel .carousel__actions button {
-    border-radius: 50px;
-    border: 0;
-    font-weight: bold;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
+button, .carousel .carousel__actions button {
+    background: #e2c275;
+    color: #5c4326;
+    border: 2px solid #bfa76f;
+    transition: background 0.2s, color 0.2s;
+}
+button:hover, .carousel .carousel__actions button:hover {
+    background: #bfa76f;
+    color: #fff;
 }
 
 .carousel .carousel__actions button#carousel__button--prev {
@@ -234,9 +245,8 @@ tr:nth-child(odd) td {
 /*footer*/
 
 #footer {
-    background-color: rgba(237, 132, 15, 0.9);
-    color: white;
-    font-size: 20px;
+    background-color: #c2b280;
+    color: #5c4326;
 }
 
 #footer p {
@@ -283,5 +293,12 @@ tr:nth-child(odd) td {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+    }
+    .countdownContainer {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+    .countdownContainer td {
+        padding: 0.3rem 0.5rem;
     }
 }
